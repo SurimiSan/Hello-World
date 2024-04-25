@@ -1,0 +1,100 @@
+dos_por_dos = "2x2"
+tres_por_tres = "3x3"
+cuatro_por_cuatro = "4x4"
+cinco_por_cinco = "5x5"
+seis_por_seis = "6x6"
+siete_por_siete = "7x7"
+BLD = "3x3 blinfolded"
+FMC = "FMC"
+OH = "3x3 one handed"
+clock = "Clock"
+megaminx = "Megaminx"
+pyraminx = "Pyraminx"
+skweb = "skweb"
+square1 = "Square-1"
+cuatro_BLD = "4x4 blinfloded"
+cinco_BLD = "5x5 blinfolded"
+MBLD = "Multiblind"
+
+print("Responde con las iniciales en mayuscula y sin acentos ")
+
+tipo = input("Que tipo de categorias prefieres: NxN, weas, o silence?  ")
+if tipo == "NxN":
+    tamaño = input("Prefieres Big cubes o Small cubes ")
+    if tamaño == "Big cubes":
+        suerte = input("Prefieres categorias con suerte o sin suerte ")
+        if suerte == "Sin suerte":
+            tiempo = input("Prefieres categorias rapidas o lentas ")
+            if tiempo == "Rapidas":
+                print("Tu categoria ideal es 5x5")
+            elif tiempo == "Lentas":
+                print("Tu categoria ideal es 7x7")
+            else :
+                print("Esa no es una opcion")
+        if suerte == "Con suerte":
+            print("Tu categoria ideal es 6x6")
+    if tamaño == "Small cubes":
+        estilo=input("Que prefieres look ahead, algoritmos, ambas o ninguna")
+        if estilo == "Look ahead":
+            print ("Tu categoria ideal es 4x4")
+        if estilo == "Algoritmos":
+            print("Tu categoria ideal es 2x2")
+        if estilo == "Ambas":
+            print("Tu categoria ideal es 3x3")
+        if estilo == "Ninguna":
+            print("Tu categoria ideal es 3x3 One handed")
+        else :
+            print("Esa no es una opcion")
+    else :
+        print("Esa no es una opcion")
+if tipo == "Weas":
+    eestilo = input("Prefiers Look ahead, TPS o algo diferente")
+    if eestilo == "TPS":
+        forma = input("Te gustan las categorias que cambian de forma Si/No")
+        if forma == "Si":
+            print("Tu categoria ideal es Square-1")
+        if forma == "No":
+            figura = input("Prefieres categorias cubicas o no cubicas")
+            if figura == "Cubicas":
+                print("Tu categoria ideal es skweb")
+            if figura == "No cubicas":
+                print ("Tu categoria ideal es pyraminx")
+            else:
+                print("Esa no es una opción")
+        else:
+            print("Esa no es un opción")
+    if eestilo == "Look ahead":
+        print("Tu categoria ideal es Megaminx")
+    if eestilo == "Diferente":
+        print("Tu categoria ideal es Clock")
+    else:
+        print("Esa no es una opción")
+if tipo == "Silence":
+    fewestmoves = input("Te gustan las categorías a ciegas Si/No ")
+    if fewestmoves == "No":
+        print("Tu categoria ideal es FMC")
+    if fewestmoves == "Si":
+        size = input("Te gusta memorizar varios cubos")
+        if size == "Si":
+            print("Tu categoria ideal es Multiblind")
+        if size == "No":
+            memorizacion = input("Cuantas letras quieres memorizar 20 40 o 80")
+            if memorizacion == "20":
+                print("Tu categoría ideal es 3x3 a ciegas")
+            if memorizacion == "40":
+                print("Tu categoria idel es 4x4 a ciegas")
+            if memorizacion == "80":
+                print("Tu categoría ideal es 5x5 a ciegas")
+            else:
+                print("Esa no es un opcion")
+        else:
+            print("Esa no es una opcion")
+    else:
+        print("Esa no es una opcion ")
+else:
+    print("Esa no es una opcion")
+
+        
+        
+
+
