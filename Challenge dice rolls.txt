@@ -1,0 +1,17 @@
+import random
+
+# Roll two six-sided dice.
+number = int(input("Hoy many times do you want to repeat the experiment"))
+i = 1
+roll = 0
+
+while i <= number:
+    first_die = random.randint(1,6)
+    second_die = random.randint(1,6)
+    dice_sum = first_die + second_die
+    print("You rolled a " + str(dice_sum) + "!")
+    i = i+1
+    roll = roll + dice_sum
+
+average = roll/number
+print("The average is " + str(average))
